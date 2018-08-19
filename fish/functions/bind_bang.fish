@@ -1,0 +1,1 @@
+/home/boris/.config/fisherman/bang-bang/functions/bind_bang.fish

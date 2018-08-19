@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/boris/git/dotfiles/i3'
+let g:netrw_dirhist_2='/home/boris'
+let g:netrw_dirhist_3='/home/boris/.local/share/nvim/shada'
+let g:netrw_dirhist_4='scp://2369403@sftp.dc2.gpaas.net/'

@@ -1,0 +1,1 @@
+/home/boris/.config/fisherman/z/conf.d/z.fish

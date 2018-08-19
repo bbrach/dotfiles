@@ -1,0 +1,1 @@
+/home/boris/.config/fisherman/thefuck/setup.py
