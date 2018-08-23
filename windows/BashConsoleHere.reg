@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\BashConsoleHere]
+@="Bash Console Here"
+"Icon"="C:\\data\\git\\dotfiles\\windows\\arch.ico"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\BashConsoleHere\command]
+@="cmd /c cd \"%V\" && bash.exe"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\BashConsoleHere]
+@="Bash Console Here"
+"Icon"="C:\\data\\git\\dotfiles\\windows\\arch.ico"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\BashConsoleHere\command]
+@="cmd /c cd \"%1\" && bash.exe"

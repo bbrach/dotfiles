@@ -3,5 +3,5 @@ alias cd.. "cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
-#alias ll="ls -la"
+alias g="git.exe"
 setenv EDITOR nvim

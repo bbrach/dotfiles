@@ -2,9 +2,9 @@
 
 # TODO Compton ranger
 
-sudo ./installRoot.sh
+#sudo ./installRoot.sh
 
-yaourt -S fortune --noconfirm
+yay -S fortune --noconfirm
 
 ./fonts/install.sh
 
@@ -15,9 +15,14 @@ export EDITOR="$VISUAL"
 
 ln -s ~/.local/share/fonts ~/.fonts
 
-ln -s ~/git/dotfiles/i3 ~/.i3
-ln -s ~/git/dotfiles/termite ~/.config/termite
-ln -s ~/git/dotfiles/nvim ~/.config/nvim
-ln -s ~/git/dotfiles/i3status ~/.config/i3status
-ln -s ~/git/dotfiles/ranger ~/.config/ranger
-ln -s ~/git/dotfiles/nvimShare ~/.local/share/nvim
+ln -s `pwd`/i3 ~/.i3
+ln -s `pwd`/termite ~/.config/termite
+ln -s `pwd`/nvim ~/.config/nvim
+ln -s `pwd`/i3status ~/.config/i3status
+ln -s `pwd`/ranger ~/.config/ranger
+ln -s `pwd`/nvimShare ~/.local/share/nvim
+ln -s `pwd`/fish ~/.config/fish
+
+ ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+
+ vim +PlugInstall +qall
