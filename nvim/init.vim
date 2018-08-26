@@ -7,6 +7,13 @@ set nocompatible
 filetype plugin on
 runtime macros/matchit.vim
 
+set swapfile
+
+if has('win32')
+	set dir=~/tmp
+else
+	set dir~/.vim/temp/
+endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 
