@@ -12,7 +12,7 @@ set swapfile
 if has('win32')
 	set dir=~/tmp
 else
-	set dir~/.vim/temp/
+	set dir=~/.vim/temp/
 endif
 call plug#begin('~/.local/share/nvim/plugged')
 
