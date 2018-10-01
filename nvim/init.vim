@@ -30,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'freeo/vim-kalisi'
 
+Plug 'lambdalisue/suda.vim'
 call plug#end()
 
 
