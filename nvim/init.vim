@@ -68,5 +68,3 @@ map <Up> <Nop>
 map <Down> <Nop>
 
 map <F5> :!%
-
-nnoremap ö `

@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # TODO Compton ranger
+# TODO i3 config.fish if wsl
+# TODO fishermen
+# TODO version wsl vbs script
 
 #sudo ./installRoot.sh
 
@@ -25,4 +28,4 @@ ln -s `pwd`/fish ~/.config/fish
 
  ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 
- vim +PlugInstall +qall
+nvim +PlugInstall +qall
