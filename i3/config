@@ -4,7 +4,7 @@
 #Autostart
 exec spotify
 # set wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/space.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/back.jpg
 exec compton -b
 exec kdeconnect-indicator
 
