@@ -5,6 +5,8 @@ set shiftwidth=4     " indent also with 4 spaces
 
 set nocompatible
 filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 runtime macros/matchit.vim
 
 set swapfile
@@ -27,10 +29,13 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'mhartington/oceanic-next'
 
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 Plug 'freeo/vim-kalisi'
 
 Plug 'lambdalisue/suda.vim'
+Plug 'shumphrey/fugitive-gitlab.vim'
 call plug#end()
 
 
@@ -62,9 +67,13 @@ set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
 map <C-n> :NERDTreeToggle<CR>
 
+set autoread " Updates buffer when changing file
+set confirm " Ask for confirmation before overriding changed buffer
+
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
 map <F5> :!%
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count) " Allow dot command for surround.vim

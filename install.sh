@@ -5,6 +5,8 @@
 # TODO fishermen
 # TODO version wsl vbs script
 
+# automount
+
 #sudo ./installRoot.sh
 
 yay -S fortune --noconfirm

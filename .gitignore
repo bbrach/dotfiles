@@ -3,4 +3,6 @@ nvimShare/swap/
 nvimShare/shada/main.shada
 nvim/plugins/
 nvimShare/swap/
+nvim/.netrwhist
 local/
+ranger/bookmarks
