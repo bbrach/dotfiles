@@ -9,7 +9,7 @@
 
 #sudo ./installRoot.sh
 
-yay -S fortune --noconfirm
+yay -S fortune tig --noconfirm
 
 ./fonts/install.sh
 
