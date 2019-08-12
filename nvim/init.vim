@@ -36,9 +36,15 @@ Plug 'freeo/vim-kalisi'
 
 Plug 'lambdalisue/suda.vim'
 Plug 'shumphrey/fugitive-gitlab.vim'
+
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'tpope/vim-dispatch'
 call plug#end()
 
-
+" Use the stdio version of OmniSharp-roslyn:
+let g:OmniSharp_server_stdio = 1
 
 " initialte theme
 " if (has("termguicolors"))
