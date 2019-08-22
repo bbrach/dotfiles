@@ -25,9 +25,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-
-" Plug 'mhartington/oceanic-next'
-
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -39,12 +36,20 @@ Plug 'shumphrey/fugitive-gitlab.vim'
 
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'tpope/vim-dispatch'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
+let g:ale_linters = {
+\ 'cs': ['OmniSharp']
+\}
+
 " Use the stdio version of OmniSharp-roslyn:
+" let g:OmniSharp_start_server = 0
 let g:OmniSharp_server_stdio = 1
+let g:OmniSharp_server_path = '/mnt/c/OmniSharp/OmniSharp.exe'
+let g:OmniSharp_translate_cygwin_wsl = 1
+
+autocmd BufNewFile,BufRead *.cs map gd :OmniSharpGotoDefinition<CR>
 
 " initialte theme
 " if (has("termguicolors"))

@@ -82,10 +82,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec palemoon
-bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec gksu pcmanfm
+bindsym $mod+F3 exec ranger
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -100,6 +97,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # change focus on WSL windows
 
 bindsym Mod1+Tab exec f
+bindsym Mod+9 exec f
 
 # i3 uses jkl; instead of hjkl -- fix that
 bindsym $mod+h focus left
