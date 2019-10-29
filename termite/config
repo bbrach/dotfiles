@@ -1,5 +1,8 @@
 [options]
 font = Inconsolata 14
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
 
 [colors]
 background = rgba(0, 0, 0, 0.75)
