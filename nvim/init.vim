@@ -18,7 +18,6 @@ else
 endif
 call plug#begin('~/.local/share/nvim/plugged')
 
-
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -37,10 +36,20 @@ Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'junegunn/fzf'
+
+Plug 'dkarter/bullets.vim'
+Plug 'chrisbra/Colorizer'
+Plug 'Yggdroot/indentLine'
+
+" TODO add fonts first
+" Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 let g:ale_linters = {
-\ 'cs': ['OmniSharp']
+\ 'cs': ['OmniSharp'],
+\ 'cpp': ['clang']
 \}
 
 " Use the stdio version of OmniSharp-roslyn:
@@ -69,6 +78,11 @@ hi LineNr ctermfg=NONE ctermbg=NONE
 let g:airline_theme='kalisi'
 let g:airline_powerline_fonts = 1 " Needs to be activated for Powerline fonts
 " let g:airline#extensions#tabline#enabled = 1 " Always show tabbar
+
+let g:airline_powerline_fonts = 1 " Needs to be activated for Powerline fonts
+
+" add ApiKeys. Not under sourcecontrol
+source private.vim
 
 set relativenumber
 set number
