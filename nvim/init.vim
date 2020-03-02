@@ -82,7 +82,7 @@ let g:airline_powerline_fonts = 1 " Needs to be activated for Powerline fonts
 let g:airline_powerline_fonts = 1 " Needs to be activated for Powerline fonts
 
 " add ApiKeys. Not under sourcecontrol
-source private.vim
+runtime private.vim
 
 set relativenumber
 set number
